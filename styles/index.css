@@ -1,0 +1,420 @@
+* {  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html{scroll-behavior: smooth;}
+header{width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(30, 32, 32);
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 4;
+
+}
+nav a{text-decoration: none;
+    font-style: normal;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: larger;
+    color:white;
+    position: relative;
+    text-decoration: none; 
+}
+
+#logo{
+    padding-left: 5px;
+    flex-grow:6;
+}
+.navigator{
+    flex-grow: 1;
+}
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 0;
+    height: 2px;
+    background: rgb(255, 254, 254); 
+    transition: 0.5s ease;
+}
+.Home::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 0;
+    height: 2px;
+    background: rgb(255, 255, 255);  
+    width: 100%;
+}
+nav a:hover::after {
+    width: 100%;
+}
+
+
+#Shopping-cart img{
+    height: 30px ;
+    width: auto;
+}
+
+.intro{
+    width: 100%;
+    height: 100vh;
+    background-image: url("/images/hero.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;               /* centers text */
+    align-items: center;
+    justify-content:space-between;
+    font-size: 2rem;
+
+}
+.shop-now-content{
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.shop-now-content a{
+   
+    text-decoration: none;
+    color: #0051ad;
+    
+}
+.IDK {
+    background-image: url("/images/hero-button.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 250px;   
+    height: 100px;  
+    height: 100px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.contact-footer
+{   
+    bottom: 0;
+    width: 100vw;
+      padding:30px;
+    background-color: rgb(0, 29, 92);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-footer h2{
+    padding-bottom: 10px;
+}
+.contact-footer input{
+    padding: 5px 30px 5px 3px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}
+.contact-footer button{
+    padding: 5px;
+    color: white;
+    background-color:  rgb(38, 72, 146);
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    cursor: pointer;
+    transition:all 0.3 ease-in;
+}
+.contact-footer button:hover{
+    background-color:#0051ad;
+    opacity: 0.8;
+    
+}
+.details{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+.contact{
+    display: grid;
+    grid-template-rows: auto auto auto auto ;
+    row-gap: 10px;
+   
+}
+.contact img{
+    width: 70px;
+}
+.about{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto ;
+    row-gap: 2px;
+}
+.payment{
+       display: grid;
+    grid-template-rows: auto auto auto auto auto ;
+    row-gap: 2px
+}
+.payment img{
+    width: 100px;
+    
+}
+.features-cards{
+    display: flex;
+    margin: 50px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+.features-cards img
+{
+width: 100px;
+
+}
+.free-shipping{background-color: rgb(255, 255, 255);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px ;
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    
+}
+
+.free-shipping:hover {
+    transform: translateY(-1px) scale(1.05);
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
+}
+.featured-product{
+    display: flex;
+    margin: 50px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+.features-cards img
+{
+width: 100px;
+
+}
+.free-shipping{background-color: rgb(255, 255, 255);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px ;
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    
+}
+
+.free-shipping:hover {
+    transform: translateY(-1px) scale(1.05);
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
+}
+.free-shipping h3{color: rgb(28, 87, 175);
+    background-color: rgb(216, 162, 162);
+    padding: 8px;
+    border-radius: 10px;
+}
+.free-shipping h4{
+    color: rgb(127, 216, 238);
+    
+}
+#featured-products{
+
+}
+.featured-products h1{
+    margin: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #0f5dd3;
+}
+.featured-products h4{
+    margin: 0px 0px 20px 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #8b9099;
+}
+.cards{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    
+}
+.cards img{
+    border-radius: 12px;
+    object-fit: contain;
+}
+.cards span{
+    color: gold;
+}
+.featured-products-card{border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color:rgb(228, 231, 236) ;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.featured-products-card:hover {
+    transform: translateY(-1px) scale(1.05);
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
+}
+.IDK2{
+    display: flex;
+    justify-content: space-between;
+
+}
+.IDK2 i{
+
+    background-color: #78a1df;
+    border-radius: 50px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.prod-description{
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-container {
+    position: relative;
+    width: 200px; /* match your image width */
+}
+
+.img-container img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+    color: transparent; 
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* On hover → heart becomes red */
+.img-container:hover .heart-icon {
+    color: red;
+}
+.repair{width: 100%;
+   
+    background-image: url("/images/banner-background.jpg");
+    color: #ffffff;
+   object-fit: cover;
+   height: fit-content;
+   text-align: center;
+   padding: 90px;
+    background-position: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    
+}
+.repair h4{
+    padding-bottom: 10px;
+}
+.repair h2  {
+    padding-bottom:10px ;
+}
+.repair button
+{
+    padding: 10px;
+    border-radius:5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition:background-color 0.5s ease-in,color 0.5s ease-in;
+}
+.repair button:hover{
+    color: #ffffff;
+    background-color: black;
+}
+.fotos{
+    display: grid;
+    row-gap: 15px;
+    column-gap: 30px;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+    margin-left: 40px;
+}
+.big{width: 100%;
+    display: flex;
+    
+        flex-direction: column;
+        justify-content: center;
+        padding-left:10px ;
+    background-image: url("/images/crazy-deals.jpg");
+    color: #ffffff;
+   object-fit: cover;
+    height: 300px;
+    background-repeat: no-repeat;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.big button{
+    width:100px;
+    margin-top: 10px;
+    border-color: white;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    border-style:double;
+    background-color: transparent;
+    padding: 10px;
+    transition:background-color 0.5s ease-out,color 0.5s ease-out ;
+}
+.big button:hover{
+    background-color: white;
+    color: orange;
+}
+.small{width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 7px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    margin-bottom: 15px;
+    background-size:cover;
+    background-image: url("/images/deal-01.jpg");
+    
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.fotos > div.small:nth-child(4) {
+    background-image: url("/images/deal-02.jpg");
+}
+
+.fotos > div.small:nth-child(5) {
+    background-image: url("/images/deal-03.jpg");
+    width: 300px;
+}
