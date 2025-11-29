@@ -1,0 +1,186 @@
+* {  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html{scroll-behavior: smooth;}
+header{width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(30, 32, 32);
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 4;
+
+}
+nav a{text-decoration: none;
+    font-style: normal;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: larger;
+    color:white;
+    position: relative;
+    text-decoration: none; 
+}
+
+#logo{
+    padding-left: 5px;
+    flex-grow:6;
+}
+.navigator{
+    flex-grow: 1;
+}
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 0;
+    height: 2px;
+    background: rgb(255, 254, 254); 
+    transition: 0.5s ease;
+}
+#Blog::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 0;
+    height: 2px;
+    background: rgb(255, 255, 255);  
+    width: 100%;
+}
+nav a:hover::after {
+    width: 100%;
+}
+
+
+#Shopping-cart img{
+    height: 30px ;
+    width: auto;
+}
+footer{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.contact-footer
+{   
+    bottom: 0;
+    width: 100vw;
+      padding:30px;
+    background-color: rgb(0, 29, 92);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-footer h2{
+    padding-bottom: 10px;
+}
+.contact-footer input{
+    padding: 5px 30px 5px 3px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}
+.contact-footer button{
+    padding: 5px;
+    color: white;
+    background-color:  rgb(38, 72, 146);
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    cursor: pointer;
+    transition:all 0.3 ease-in;
+}
+.contact-footer button:hover{
+    background-color:#0051ad;
+    opacity: 0.8;
+    
+}
+.details{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+.contact{
+    display: grid;
+    grid-template-rows: auto auto auto auto ;
+    row-gap: 10px;
+   
+}
+.contact img{
+    width: 70px;
+}
+.about{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto ;
+    row-gap: 2px;
+}
+.payment{
+       display: grid;
+    grid-template-rows: auto auto auto auto auto ;
+    row-gap: 2px
+}
+.payment img{
+    width: 100px;
+    
+}
+.read-more
+{ display: flex;
+    flex-direction: column;
+    gap: 10px;
+justify-content: center;
+align-items: center;
+background-image: url("/images/blog-hero.jpg");
+height: 350px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+
+}
+.read-more h1{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.read-more h4{
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: lighter;
+}
+.blogs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 50px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.card{
+    position: relative;
+    width: 80%;
+   display: flex;
+   
+}
+.written{top: 35px;
+    position: absolute;
+    left: 250px;
+}
+#sora
+{   width: 300px;
+       background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.date{
+    top: -30px;
+    position: absolute;
+    left: 0px;
+    font-size: 2rem;
+}
