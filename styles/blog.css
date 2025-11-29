@@ -170,6 +170,10 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 .written{top: 35px;
     position: absolute;
     left: 250px;
+    color: #494949;
+}
+.written strong{
+    margin-top: 100px;
 }
 #sora
 {   width: 300px;
@@ -183,4 +187,12 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
     position: absolute;
     left: 0px;
     font-size: 2rem;
+}
+.written :nth-child(3){
+    padding-top: 150px;
+    color: rgb(26, 26, 126);
+}
+.written :nth-child(2){
+    padding-top: 15px;
+    font-size: large;
 }
